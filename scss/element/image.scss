@@ -1,0 +1,13 @@
+.element-image{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 117, 4, 0.623);
+    @include respond-to(850px){
+        border-radius: 70%;
+        width: 90%;
+    }
+    @include respond-to(630px){
+        height: 30%;
+    }
+}

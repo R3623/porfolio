@@ -1,0 +1,6 @@
+.bloc_Contact{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    @include flex-box(flex, nowrap, column, space-around, center)
+}

@@ -1,0 +1,8 @@
+.bloc_Footer{
+    width: 100%;
+    height: 20vh;
+    @include flex-box(flex, wrap, row, space-around, flex-end);
+    background-color: $quartet-color;
+    padding: 20px 0;
+    text-align: end;
+}

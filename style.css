@@ -1,0 +1,240 @@
+.bloc_nav-bar ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.bloc_nav-bar ul li {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+.bloc_nav-bar ul li a {
+  text-decoration: none;
+  color: rgb(16, 66, 160);
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 10px;
+  padding: 10px 80px;
+}
+.bloc_nav-bar ul li a:hover {
+  background-color: rgba(16, 66, 160, 0.692);
+  color: rgb(200, 222, 224);
+  transition: 0.2s;
+  font-size: 20px;
+  box-shadow: 1px 2px rgba(16, 66, 160, 0.788);
+}
+
+.bloc_Homme h2 {
+  font-size: 50px;
+  font-weight: 200;
+  color: rgb(200, 222, 224);
+  border-bottom: 0.2px solid rgb(224, 117, 17);
+  padding: 40px;
+}
+.bloc_Homme p {
+  font-size: 20px;
+  color: rgb(200, 222, 224);
+}
+
+.bloc_About {
+  position: relative;
+}
+.bloc_About h3 {
+  color: rgb(200, 222, 224);
+  font-size: 50px;
+  font-weight: 200;
+  border-bottom: 0.5px solid rgb(224, 117, 17);
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+.bloc_About h4 {
+  color: rgb(224, 117, 17);
+  border-left: 2px solid rgb(200, 222, 224);
+  padding: 20px;
+  text-align: initial;
+  font-size: 30px;
+  position: absolute;
+  left: 70px;
+  margin-bottom: 30px;
+}
+.bloc_About p {
+  color: rgb(200, 222, 224);
+  font-size: 20px;
+  text-align: start;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.bloc_Project {
+  position: relative;
+}
+.bloc_Project h3 {
+  color: rgb(200, 222, 224);
+  font-size: 50px;
+  font-weight: 200;
+  border-bottom: 0.5px solid rgb(224, 117, 17);
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+.bloc_Project h4 {
+  color: rgb(224, 117, 17);
+  border-left: 2px solid rgb(200, 222, 224);
+  padding: 20px;
+  text-align: initial;
+  font-size: 30px;
+  position: absolute;
+  left: 70px;
+  margin-bottom: 30px;
+}
+.bloc_Project p {
+  color: rgb(200, 222, 224);
+  font-size: 20px;
+  text-align: start;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.bloc_Contact {
+  position: relative;
+}
+.bloc_Contact h3 {
+  color: rgb(200, 222, 224);
+  font-size: 50px;
+  font-weight: 200;
+  border-bottom: 0.5px solid rgb(224, 117, 17);
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+.bloc_Contact h4 {
+  color: rgb(224, 117, 17);
+  border-left: 2px solid rgb(200, 222, 224);
+  padding: 20px;
+  text-align: initial;
+  font-size: 30px;
+  position: absolute;
+  left: 70px;
+  margin-bottom: 30px;
+}
+.bloc_Contact p {
+  color: rgb(200, 222, 224);
+  font-size: 20px;
+  text-align: start;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(2, 35, 95);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  width: 20%;
+  height: 100vh;
+  background-color: rgb(200, 222, 224);
+  margin-bottom: 0;
+  position: fixed;
+}
+
+main {
+  width: 80%;
+  height: 100vh;
+  color: white;
+  margin-left: 20%;
+  float: inline-end;
+}
+
+.bloc_image {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc_nav-bar {
+  width: 100%;
+  height: 60%;
+}
+
+.bloc_Homme {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px currentColor rgb(200, 222, 224);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc_About {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px currentColor rgb(200, 222, 224);
+}
+
+.bloc_Project {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px currentColor rgb(200, 222, 224);
+  text-align: center;
+}
+
+.bloc_Contact {
+  width: 100%;
+  height: 80vh;
+}
+
+.bloc_Footer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.element-image {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 117, 4, 0.623);
+}
+
+.element_button {
+  padding: 10px;
+  border: 1px solid rgb(224, 117, 17);
+  border-radius: 5px;
+  color: rgb(224, 117, 17);
+  background-color: rgba(221, 116, 18, 0.055);
+  box-shadow: 1px 2px rgb(224, 117, 17);
+}
+.element_button:hover {
+  color: rgb(16, 66, 160);
+  background-color: rgb(200, 222, 224);
+  cursor: pointer;
+  box-shadow: 1px 2px rgb(16, 66, 160);
+  transition: 0.4s;
+  border: 1px solid rgb(16, 66, 160);
+}
+
+/*# sourceMappingURL=style.css.map */

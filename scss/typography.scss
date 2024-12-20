@@ -1,0 +1,318 @@
+.bloc_nav-bar ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    li{
+        width: 100%;
+        margin-bottom: 40px; 
+        padding: 10px 0;  
+        @include respond-to(1079px){
+            margin-bottom: 30px;
+        }
+        @include respond-to(842px){
+            margin-bottom: 20px;
+        }
+        @include respond-to(612px){
+            margin-bottom: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 15px;
+            font-weight: 300;
+            border-radius: 10px;
+            padding: 10px 80px;
+            @include respond-to(1079px){
+                padding: 10px 60px;
+            }
+            @include respond-to(842px){
+                padding: 7px 40px;
+                font-size: 12px;
+            }
+            @include respond-to(612px){
+                padding: 5px 9px;
+            }
+            &:hover{
+                background-color: rgba(16, 66, 160, 0.692);
+                color: $primary-color;
+                transition: 0.2s;
+                font-size: 20px;
+                box-shadow: 1px 2px rgba(16, 66, 160, 0.788);
+            }
+        }
+    }
+
+}
+.bloc_Homme {
+    h2{
+        font-size: 50px;  
+        font-weight: 200;
+        color: $primary-color; 
+        border-bottom: 0.2px solid $quartet-color;
+        padding: 40px;
+        @include respond-to(850px){
+            font-size: 40px;
+            padding: 30px;
+        }
+        @include respond-to(640px){
+            font-size: 30px;
+            padding: 20px;
+        }
+        @include respond-to(480px){
+            font-size: 20px;
+            padding: 10px;
+        }
+    
+    }
+    p{
+        font-size: 20px;
+        color: $primary-color;
+        @include respond-to(740px){
+            font-size: 15px;
+        }
+        @include respond-to(552px){
+            font-size: 10px;
+        }
+
+    }
+}
+.bloc_About{
+    position: relative;
+    h3{
+        color: $primary-color;
+        font-size: 50px;
+        font-weight: 200;
+        border-bottom: 0.5px solid $quartet-color;
+        padding: 40px;
+        text-align: center;
+        margin-top: 20px;
+        @include respond-to(850px){
+            font-size: 40px;
+            padding: 30px;
+        }
+        @include respond-to(640px){
+            font-size: 30px;
+            padding: 20px;
+        }
+        @include respond-to(480px){
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+    h4{
+        color: $quartet-color;
+        border-left: 2px solid $primary-color;
+        padding: 20px;
+        text-align: initial;
+        font-size: 30px;
+        position: absolute;
+        left: 70px;
+        margin-bottom: 30px;
+        @include respond-to(1086px){
+            font-size: 25px;
+            padding: 15px;
+            bottom: 240px;
+        }
+        @include respond-to(846px){
+            font-size: 20px;
+            padding: 10px;
+            bottom: 270px;
+            left: 60px;
+        }
+        @include respond-to(762px){
+            left: 50px;
+            font-size: 15px;
+            bottom: 220px;
+        }
+        @include respond-to(750px){
+            font-size: 15px;
+            bottom: 260px;
+        }
+        @include respond-to(559px){
+            font-size: 15px;
+            padding: 7px;
+            bottom: 220px;
+        }
+        @include respond-to(470px){
+            bottom: 240px;
+            left: 30px;
+        }
+
+
+    }
+    p{
+        color: $primary-color;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 60px;
+        @include respond-to(740px){
+            font-size: 15px;
+        }
+        @include respond-to(552px){
+            font-size: 10px;
+        }
+        
+    }
+}
+.bloc_Career{
+    h3{
+        color: $primary-color;
+        font-size: 50px;
+        font-weight: 200;
+        border-bottom: 0.5px solid $quartet-color;
+        padding: 40px;
+        text-align: center;
+        margin-top: 20px;
+        @include respond-to(850px){
+            font-size: 40px;
+            padding: 30px;
+        }
+        @include respond-to(640px){
+            font-size: 30px;
+            padding: 20px;
+        }
+        @include respond-to(480px){
+            font-size: 20px;
+            padding: 10px;
+        }
+       
+    }
+    .career{
+        @include flex-box(flex, nowrap, row, space-around, center);
+        .Etablishment{
+            width: 40%;
+            height: 340px;
+            border: 2px solid $primary-color;
+            border-radius: 20px;    
+            margin: 0 90px;
+            @include respond-to(1160px){
+                margin: 0 60px;
+                font-size: 15px;
+                width: 30%;
+            }
+            @include respond-to(1081px){
+                margin: 0 40px;
+                font-size: 12px;
+                height: 300px;
+            }
+            @include respond-to(736px){
+                margin: 0 30px;
+                font-size: 10px;
+                height: 260px;
+            }
+            @include respond-to(538px){
+                margin: 0 10px;
+                width: 100%;
+            }
+            
+            .image1{
+                width: 100%;
+                height: 50%;
+            }
+            .description{
+                @extend .image1;
+                padding-bottom: -30px;
+                color: $primary-color;
+                
+            }
+        }
+    }
+}   
+.bloc_Contact{
+    position: relative;
+    .Envoi_message{
+        height: 80vh;
+        @include flex-box(flex, nowrap, column, flex-start, center);
+        padding-bottom: 55px;
+       h3{
+        color: $primary-color;
+        font-size: 30px;
+        font-weight: 200;
+        border-bottom: 0.5px solid $quartet-color;
+        text-align: center;
+        margin-top: 20px;
+        @include respond-to(850px){
+            font-size: 30px;
+            padding: 30px;
+        }
+        @include respond-to(640px){
+            font-size: 30px;
+            padding: 20px;
+        }
+        @include respond-to(480px){
+            font-size: 20px;
+            padding: 10px;
+        }
+       }
+       h4{
+        color: $quartet-color;
+        font-size: 15px;
+        @include respond-to(610px){
+            font-size: 12px;
+        }
+       
+       }
+       input{
+        text-align: center;
+        background-color: $primary-color;
+        border: 2px solid $secondary-color;
+        color: $secondary-color;
+        border-radius: 10px;
+        @include respond-to(740px){
+            font-size: 15px;
+        }
+        @include respond-to(552px){
+            font-size: 10px;
+        }
+       }
+       textarea{
+        @extend input;
+       }
+    }
+
+    .bloc_Footer{
+        .left_footer{
+            width: 40%;
+            height: 80px;
+            @include flex-box(flex, nowrap, column, space-around, center);
+            border-right: 2px solid $primary-color;
+            a{
+                text-decoration: none;
+                color: $third-color;
+                
+                &:hover{
+                    color: $primary-color;
+                    padding: 10px;
+                    background-color: $third-color;
+                    border: 2px solid $primary-color;
+                    border-radius: 20px;
+                }
+                
+            }
+            .right_footer{
+                width: 40%;
+                height: 80px;
+                @include flex-box(flex, nowrap, column, space-around, center);
+                text-decoration: none;
+                a {
+                    text-decoration: none;
+                    color: $third-color;
+                    
+                    &:hover{
+                        color: $primary-color;
+                        padding: 10px;
+                        background-color: $third-color;
+                        border: 2px solid $primary-color;
+                        border-radius: 20px;
+                    }
+
+                }
+            }
+            
+               
+        
+        }
+    }
+}

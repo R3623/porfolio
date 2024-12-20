@@ -1,0 +1,14 @@
+@mixin flex-box($display, $flex_wrap, $flex_direction, $justify_content, $align_items){
+    display: $display;
+    flex-wrap: $flex_wrap;
+    flex-direction: $flex_direction;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}
+@mixin respond-to($breakpoints){
+    @media screen and (max-width: $breakpoints) {
+        @content;
+    }
+    
+}
+
